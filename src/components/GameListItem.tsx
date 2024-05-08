@@ -22,8 +22,8 @@ const GameListItem: React.FC<IGameListItem> = ({ id, player1, player2, onPress }
     
         <Container color="black" onPress={onPress}>
             <Text>Game id: {id}</Text>
-            <Text>Player 1: {player1.email}</Text>
-            <Text>Player 2: {player2.email}</Text>
+            <Text>Player 1: {player1 ? player1.email : 'EMAIL'}</Text>
+            <Text>Player 2: {player2 ? player2.email : 'EMAIL'}</Text>
         </Container>
     );
 };

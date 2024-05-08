@@ -97,6 +97,9 @@ const LobbyScreen = () => {
               player1={game.player1}
               player2={game.player2}
               key={game.id}
+              onPress={() => {
+                // navigation.navigate(GameRouteNames.TABLE, { gameId: game.id });
+              }}
             />
           ))
         : games.map((game: any) => (
@@ -105,6 +108,9 @@ const LobbyScreen = () => {
               player1={game.player1}
               player2={game.player2}
               key={game.id}
+              onPress={() => {
+                // navigation.navigate(GameRouteNames.TABLE, { gameId: game.id });
+              }}
             />
           ))
     ) : (
