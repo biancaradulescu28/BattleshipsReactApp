@@ -3,7 +3,6 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { GameRouteNames } from './route-names';
 import { Text } from 'react-native'
 import LobbyScreen from '../screens/game/Lobby.screen';
-//import TabelScreen from '../screens/game/Table.screen';
 
 const GameStack = createNativeStackNavigator()
 
